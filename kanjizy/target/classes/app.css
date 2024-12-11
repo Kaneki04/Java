@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: #FFFFFF;
+}
+
+.button {
+    -fx-background-color: #FCF8F3;
+    -fx-text-fill: black;
+    border-radius: 10px;
+
+
+}
+
+.progress-bar {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  background-color: #eeeeee;
+  border: 1px solid #615e5e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.textField {
+  background-color: #eeeeee;
+  border: 1px solid #615e5e;
+  border-radius: 50px;
+  padding: 7px;
+  font-size: 15px;
+  width: 60%;
+  text-align: center;
+  outline: none;
+}

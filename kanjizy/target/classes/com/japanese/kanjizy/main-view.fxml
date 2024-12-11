@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.japanese.kanjizy.MainController">
+   <children>
+      <TextField fx:id="myTextField" layoutX="240.0" layoutY="208.0" onKeyTyped="#listenKeys" prefHeight="55.0" prefWidth="280.0" stylesheets="@../../../app.css">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label fx:id="Kanji" alignment="CENTER" layoutX="240.0" layoutY="79.0" prefHeight="38.0" prefWidth="280.0">
+         <font>
+            <Font size="35.0" />
+         </font></Label>
+      <Label fx:id="ResponsiveLabel" alignment="CENTER" layoutX="240.0" layoutY="139.0" prefHeight="55.0" prefWidth="280.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Result" alignment="CENTER" layoutX="326.0" layoutY="282.0" prefHeight="46.0" prefWidth="107.0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="137.0" layoutY="282.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="102.0" text="Back">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="520.0" layoutY="282.0" mnemonicParsing="false" onAction="#next" prefHeight="46.0" prefWidth="102.0" text="Next">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <ChoiceBox fx:id="modus" layoutX="14.0" layoutY="51.0" prefHeight="28.0" prefWidth="130.0" />
+      <StackPane layoutX="175.0" layoutY="369.0" prefHeight="55.0" prefWidth="435.0">
+         <children>
+            <Label fx:id="progressLabel" />
+            <ProgressBar fx:id="myProgress" prefHeight="18.0" prefWidth="435.0" progress="0.0" stylesheets="@../../../app.css" />
+         </children>
+      </StackPane>
+      <ChoiceBox fx:id="lang" layoutX="640.0" layoutY="51.0" prefHeight="28.0" prefWidth="130.0" />
+      <Button layoutX="341.0" layoutY="424.0" mnemonicParsing="false" onAction="#showAnswer" prefHeight="46.0" prefWidth="102.0" text="Answer">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="showLap" alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="354.0" prefHeight="28.0" prefWidth="124.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
